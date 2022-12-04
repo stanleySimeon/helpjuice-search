@@ -46,6 +46,8 @@
     <li><a href="https://reactjs.org/">React.js</a></li>
     <li><a href="https://tailwindcss.com/">Tailwind CSS</a></li>
   </ul>
+</details>
+<details>
   <summary>Server</summary>
   <ul>
     <li><a href="https://rubyonrails.org/">Ruby on rails</a></li>
