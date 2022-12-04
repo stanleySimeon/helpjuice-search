@@ -1,0 +1,23 @@
+{
+  "name": "helpjuice-search",
+  "version": "1.0.0",
+  "description": "To create a realtime search box, where users search articles, and then to have analytics that display what users were searching for. ",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stanleySimeon/helpjuice-search.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stanleySimeon/helpjuice-search/issues"
+  },
+  "homepage": "https://github.com/stanleySimeon/helpjuice-search#readme"
+}
