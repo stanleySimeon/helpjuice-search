@@ -28,9 +28,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [HELPJUICE-SEARCH] <a name="about-project"></a>
+# 📖 HELPJUICE-SEARCH <a name="about-project"></a>
 
-**[HELPJUICE-SEARCH]** This is a a realtime search box, where users search articles, and then to have analytics that display what users were searching for.
+**HELPJUICE-SEARCH** This is a a realtime search box, where users search articles, and then to have analytics that display what users were searching for.
 
 ## 🛠 Built With <a name="built-with"></a>
 
