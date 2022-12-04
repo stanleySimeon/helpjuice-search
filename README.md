@@ -1,126 +1,171 @@
-# HELPJUICE-SEARCH
+<a name="readme-top"></a>
 
-> This is a a realtime search box, where users search articles, and then to have analytics that display what users were searching for.
-​
+<div align="center">
+  <h3><b>HELPJUICE-SEARCH</b></h3>
+</div>
 
-## Built With
+<!-- TABLE OF CONTENTS -->
 
-- Ruby on rails
-- Tailwind CSS
-- NPM, Git, Github
-​
+# 📗 Table of Contents
 
-## Getting Started
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
+- [📝 License](#license)
 
-​
-**This project includes Rubocop (linters) for Reporting errors in Ruby and An open-source, automated tool for improving the quality of web pages, which has audits for performance, accessibility, progressive web apps, SEO and more.**
+<!-- PROJECT DESCRIPTION -->
 
-Run the following commands to install dependencies
-​
+# 📖 [HELPJUICE-SEARCH] <a name="about-project"></a>
 
-```
+**[HELPJUICE-SEARCH]** This is a a realtime search box, where users search articles, and then to have analytics that display what users were searching for.
 
-gem install rubocop
+## 🛠 Built With <a name="built-with"></a>
 
-> If you’d rather install RuboCop using bundler, don’t require it in your Gemfile:
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Ruby on rails](https://rubyonrails.org/)
 
- gem 'rubocop', require: false
+### Tech Stack <a name="tech-stack"></a>
 
-> RuboCop is stable between major versions, both in terms of API and cop configuration.
-  We aim the ease the maintenance of RuboCop extensions and the upgrades between RuboCop releases.
-  All big changes are reserved for major releases.
-  To prevent an unwanted RuboCop update you might want to use a conservative version lock in your Gemfile:
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://tailwindcss.com/">Tailwind CSS</a></li>
+  </ul>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://rubyonrails.org/">Ruby on rails</a></li>
+    <li><a href="https://postgressql.org/">PostgreSQL</a></li>
+  </ul>
+</details>
 
- gem 'rubocop', '~> 1.0', require: false
+<!-- LIVE DEMO -->
 
-```
+## 🚀 Live Demo <a name="live-demo"></a>
 
-### Usage
+- [Live Demo Link](#)
 
-```
-rubocop --color
-rubocop --autocorrect
-```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-To get a local copy up and running follow these simple example steps.
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-1. Node package Manager(NPM)
-   - To install NPM on your local machine, please visit [NPM official website](https://nodejs.org/en/download/)
+In order to run this project you need:
 
-2. Git
-    - To install Git on your local machine, please visit [Git official website](https://git-scm.com/downloads)
-
-3. Github
-    - To create a Github account, please visit [ Github official website](
-
-4. Ruby
-    - To install Ruby on your local machine, please visit [Ruby official website](https://www.ruby-lang.org/en/documentation/installation/)
-
-5. Ruby on Rails
-    - To install Ruby on Rails on your local machine, please visit [Ruby on Rails official website](https://guides.rubyonrails.org/getting_started.html)
-
-6. Postgresql
-    - To install Postgresql on your local machine, please visit [Postgresql official website](https://www.postgresql.org/download/)
-
-​
-
-- Text editor(Vscode, Atom, NotePad++, Sublime)
-​
+```sh
+ npm
+ Ruby
+ Gem
+ Rspec
+```
 
 ### Setup
 
-- Clone the repository to your local machine
-    ```git clone https://github.com/stanleySimeon/helpjuice-search.git```
+Clone this repository to your desired folder:
 
-- Change directory into the cloned repository
-    ```cd helpjuice-search```
-
-- Install all the dependencies
-    ```bundle install```
-
-- Run the following commands to run the app
-    ```rails db:create```
-    ```rails db:migrate```
-    ```rails s```
-
-- In your browser, go to
-    ```http://localhost:3000```
+```sh
+  cd your_folder_name (where you want to clone the project)
+  git clone https://github.com/stanleySimeon/helpjuice-search.git
+```
 
 ### Install
 
-- To install rspec: gem install rspec
+Install this project with:
+
+```sh
+  cd helpjuice-search
+  bundle install
+  npm install
+  rake db:create
+  rake db:migrate
+  rake assets:precompile
+```
 
 ### Usage
 
-- To run all the tests: rspec ./spec
+To run the project, execute the following command:
 
-## Authors
+```sh
+  rails s
+```
 
-​
- 👤 **Stanley SIMEON**
+### Deployment
+
+You can deploy this project using:
+
+  ```sh
+    heroku login
+    heroku create helpjuice-search
+    git push heroku master
+  ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Author**
 
 - GitHub: [@stanleySimeon](https://github.com/stanleySimeon)
 - Twitter: [@mstanleyme](https://twitter.com/mstanleyme)
-- LinkedIn: [@stanleysimeon](https://www.linkedin.com/in/stanleysimeon/)
-​
+- LinkedIn: [LinkedIn](https://linkedin.com/in/stanleysimeon)
 
-## 🤝 Contributing
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-​
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
 Contributions, issues, and feature requests are welcome!
-​
+
 Feel free to check the [issues page](../../issues/).
-​
 
-## Show your support
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-​
-Give a ⭐️ if you like this project!
-​
+<!-- SUPPORT -->
 
-## 📝 License
+## ⭐️ Show your support <a name="support"></a>
 
-​
-This project is [MIT](./MIT.md) licensed.
+If you like this project, please give it a ⭐️!
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+- I would like to thank the following people:
+
+  - [@microverse](https://github.com/microverseinc) for the opportunity to learn and grow as a developer
+  - [@brianholt](https://www.linkedin.com/in/btholt/) for his inspiring React course on Frontend Masters
+  - [@joshcomeau](https://github.com/Joshcomeau) for his inspiring css course
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
