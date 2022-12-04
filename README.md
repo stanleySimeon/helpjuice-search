@@ -110,6 +110,14 @@ To run the project, execute the following command:
   rails s
 ```
 
+### Run tests
+
+To run the tests, execute the following command:
+
+```sh
+  rspec
+```
+
 ### Deployment
 
 You can deploy this project using:
