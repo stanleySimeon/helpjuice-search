@@ -1,8 +1,8 @@
-database:
+databases:
   - name: postgres
     ipAllowList: []
 
-service:
+services:
   - type: web
     name: rails
     env: ryby
