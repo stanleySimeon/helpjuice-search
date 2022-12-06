@@ -1,0 +1,41 @@
+<div class="w-full flex justify-center items-center px-2 md:px-16 lg:px-32 pt-8 md:pt-12 lg:pt-16">
+  <div class="md:w-5/12 bg-white px-2 md:px-6 lg:px-8 py-4 md:py-6 rounded shadow-lg">
+    <h1 class="font-bold text-lg md:text-2xl lg:text-3xl text-midnight mb-6">Edit <%= resource_name.to_s.humanize %></h1>
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+      <%= render "devise/shared/error_messages", resource: resource %>
+      <div class="flex flex-col gap-4">
+        <div class="field">
+          <%= f.label :email %><br />
+          <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Your email...", class: "w-full rounded" %>
+        </div>
+        <div class="field">
+          <%= f.label :current_password %>
+          <%= f.password_field :current_password, autocomplete: "current-password", placeholder: "Current password", class: "w-full rounded" %>
+        </div>
+        <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+          <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+        <% end %>
+
+        <div class="field">
+          <%= f.label :new_password %><br />
+          <%= f.password_field :password, autocomplete: "new-password", placeholder: "New password", class: "w-full rounded" %>
+          <% if @minimum_password_length %>
+            <br />
+          <% end %>
+        </div>
+
+        <div class="field">
+          <%= f.label :confirmation_your_password %><br />
+          <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Confirm password", class: "w-full rounded" %>
+        </div>
+      </div>
+      <div class="actions">
+        <%= f.submit "Update", class: "px-4 py-2 text-white bg-midnight my-4 rounded hover:bg-skyBlueDark cursor:pointer" %>
+      </div>
+    <% end %>
+    <span class="flex gap-6">
+      <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: "text-skyBlue hover:text-gray" %>
+      <%= link_to "Back to articles", :back, class: "text-skyBlue hover:text-gray" %>
+    </span>
+  </di>
+</div>

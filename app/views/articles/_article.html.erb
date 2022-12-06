@@ -1,0 +1,18 @@
+<div id="<%= dom_id article %>" class="px-2 md:px-6 pt-4 md:pt-6 mt-4 md:mt-6 lg:mt-10 shadow-md md:shadow-lg rounded mb-12 pb-4">
+  <p class="my-5 flex gap-2 font-bold">
+   <%= link_to article.title, article_path(article), class: "text-decoration-none" %>
+  </p>
+
+  <p class="my-5 pl-2 md:pl-0">
+    <%= article.description %>
+  </p>
+
+  <% if action_name != "show" %>
+    <div class="flex justify-end items-center gap-4">
+      <%= link_to "Show", article, class: "font-medium text-decoration-none text-skyBlue cursor-pointer hover:text-gray" %>
+    </div>
+  <% end %>
+  <% if can? :manage, @article %>
+    <%= link_to 'Edit', edit_article_path(article), class: "font-medium text-decoration-none text-skyBlue cursor-pointer hover:text-gray" %>
+  <% end %>
+</div>

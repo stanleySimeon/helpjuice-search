@@ -1,0 +1,6 @@
+<%= form_with(url: articles_path, method: :get, data: { controller: "search-bar", turbo_frame: "articles", turbo_action: "advance" }) do |form| %>
+  <div class="flex justify-between w-full gap-4">
+    <%= form.text_field :query, placeholder: "Search...", class: "w-full shadow rounded border border-grayLight outline-none px-3 py-2 shadow-md cursor-pointer", data: { action: "input->search-bar#search"} %>
+    <%= submit_tag "Search", class: "text-white bg-midnight px-4 py-2 rounded cursor-pointer" %>
+  </div>
+<% end %>
