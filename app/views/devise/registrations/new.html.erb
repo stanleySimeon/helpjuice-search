@@ -1,7 +1,9 @@
 <div class="text-midnight bg-transparent flex justify-center items-center">
-  <span class="w-auto px-4 h-12 flex justify-center mt-2 rounded items-center bg-white">
-    <%= render "devise/shared/error_messages", resource: resource%>
-  </span>
+  <% if resource.errors.any? %>
+    <span class="w-auto px-4 h-12 flex justify-center mt-2 rounded items-center bg-white">
+      <%= render "devise/shared/error_messages", resource: resource %>
+    </span>
+  <% end %>
 </div>
 <div class="container px-0 flex justify-center items-center pt-16 md:mt-6">
   <div class="w-full md:mt-12 md:w-5/12 h-auto backdrop-blur-3xl rounded shadow-lg p-2 md:p-4">
