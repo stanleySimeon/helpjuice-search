@@ -13,6 +13,6 @@
     </div>
   <% end %>
   <% if can? :manage, @article %>
-    <%= link_to 'Edit', edit_article_path(article), class: "font-medium text-decoration-none text-skyBlue cursor-pointer hover:text-gray" %>
+    <%= link_to 'Edit article', edit_article_path(article), class: "font-medium text-decoration-none text-skyBlue cursor-pointer hover:text-gray" %>
   <% end %>
 </div>
