@@ -1,0 +1,11 @@
+<div class="container-fluid flex-col md:flex-row justify-between md:gap-4 px-2 pt-6 pb-4 md:px-16 lg:px-32 sticky top-20 left-0 bg-white">
+  <%= form_with(url: articles_path, method: :get, data: { controller: "search-bar", turbo_frame: "articles", turbo_action: "advance" }) do |form| %>
+    <div class="w-full flex justify-between">
+      <h1 class="font-bold text-md md:text-2xl lg:text-5xl text-midnight mb-3 md:mb-0">Articles</h1>
+      <div class="flex justify-between w-full md:w-4/12 gap-4">
+        <%= form.text_field :query, placeholder: "Search article by title...", class: "w-full shadow rounded-md border border-grayLight outline-none px-3 py-2 shadow-md cursor-pointer", data: { action: "input->search-bar#search"} %>
+        <%= form.submit "Search", class: "text-white bg-midnight px-6 py-2 rounded cursor-pointer" %>
+      </div>
+    </div>
+  <% end %>
+</div>

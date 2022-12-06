@@ -1,13 +1,5 @@
+<%= render "articles/search" %>
 <div class="w-full px-2 md:px-16 lg:px-32 pt-8 md:pt-12 lg:pt-16">
-  <%= form_with(url: articles_path, method: :get, data: { controller: "search-bar", turbo_frame: "articles", turbo_action: "advance" }) do |form| %>
-    <div class="w-full flex flex-col md:flex-row justify-between md:gap-4 px-0">
-      <h1 class="font-bold text-md md:text-2xl lg:text-5xl text-midnight mb-3 md:mb-0">Articles</h1>
-      <span class="flex justify-between w-full md:w-7/12 gap-4">
-        <%= form.text_field :query, placeholder: "Search article by title...", class: "w-full shadow rounded-md border border-gray-200 outline-none px-3 py-2 shadow-md cursor-pointer", data: { action: "input->search-bar#search"} %>
-        <%= form.submit "Search", class: "text-white bg-midnight px-6 py-2 rounded cursor-pointer" %>
-      </span>
-    </div>
-  <% end %>
   <div id="articles" class="w-full">
     <%= render "articles", articles: @articles %>
   </div>
