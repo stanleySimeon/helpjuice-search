@@ -1,3 +1,8 @@
+<div class="text-midnight bg-transparent flex justify-center items-center">
+  <span class="w-auto px-4 h-12 flex justify-center mt-2 rounded items-center bg-white">
+    <%= render "devise/shared/error_messages", resource: resource%>
+  </span>
+</div>
 <div class="container px-0 flex justify-center items-center pt-16 md:mt-6">
   <div class="w-full md:mt-12 md:w-5/12 h-auto backdrop-blur-3xl rounded shadow-lg p-2 md:p-4">
     <div class="w-full h-auto py-2 border-b border-grayLight mb-6 md:mb-12">
@@ -5,8 +10,7 @@
     </div>
     <span class="text-sm md:text-lg">
       <%= form_for(resource, as: resource_name, url: registration_path(resource_name), data: { turbo: false }) do |f| %>
-        <%= render "devise/shared/error_messages", resource: resource%>
-        <%= f.label :email, class: "text-white" %><br />
+        <%= f.label :email, class: "text-white mb-0" %><br />
         <%= f.email_field :email, autofocus: false, placeholder: "johndoe@gmail.com", class: "input w-full mt-2 pl-2 mb-3 border-b border-grayLight text-white bg-transparent border-x-0 border-t-0 focus:border-grayLight focus:ring-transparent" %>
         <%= f.label :password, class: "text-white" %>
         <%= f.password_field :password, autocomplete: "new-password", placeholder: "********", class: "input w-full mt-2 pl-2 mb-3 border-b border-grayLight text-white bg-transparent border-x-0 border-t-0 focus:border-grayLight focus:ring-transparent" %>

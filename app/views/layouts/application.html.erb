@@ -13,8 +13,14 @@
   <body class="bg-#F1F1F6">
     <main class="container-fluid px-0">
       <%= render "layouts/navbar" %>
-      <%= notice %>
-      <%= alert %>
+      <% if alert || notice %>
+        <div class="text-white bg-transparent flex justify-start items-center">
+          <span class="w-auto px-4 ml-2 md:ml-16 lg:ml-32 h-12 flex justify-center mt-2 rounded items-center bg-midnight">
+            <%= notice %>
+            <%= alert %>
+          </span>
+        </div>
+      <% end %>
       <%= yield %>
     </main>
   </body>
@@ -22,8 +28,14 @@
   <body class="bg-cover bg-fixed" background="https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
     <main class="container-fluid px-0">
       <%= render "layouts/navbar" %>
-      <%= notice %>
-      <%= alert %>
+      <% if alert || notice %>
+        <div class="text-midnight bg-transparent flex justify-center items-center">
+          <span class="w-auto px-4 h-12 flex justify-center mt-2 rounded items-center bg-white">
+            <%= notice %>
+            <%= alert %>
+          </span>
+        </div>
+      <% end %>
       <%= yield %>
     </main>
   </body>
