@@ -5,7 +5,7 @@ export default class extends Controller {
   search() {
     clearTimeout(this.timeout)
     this.timeout = setTimeout(() => {
-      this.element.submitRequest()
-    }, 200)
+      this.element.requestSubmit()
+    }, 2000)
   }
 }
