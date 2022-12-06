@@ -6,7 +6,7 @@ class Ability
     can :create, Article
 
     return unless user.present?
-    
+
     can :manage, Article, user_id: user.id
   end
 end
