@@ -10,7 +10,9 @@
   <% if action_name != "show" %>
     <div class="flex justify-end items-center gap-4">
       <%= link_to "Show", article, class: "font-medium text-decoration-none text-skyBlue cursor-pointer hover:text-gray" %>
-      <%= link_to 'Edit', edit_article_path(article), class: "font-medium text-decoration-none text-skyBlue cursor-pointer hover:text-gray" %>
     </div>
+  <% end %>
+  <% if can? :manage, @article %>
+    <%= link_to 'Edit', edit_article_path(article), class: "font-medium text-decoration-none text-skyBlue cursor-pointer hover:text-gray" %>
   <% end %>
 </div>
