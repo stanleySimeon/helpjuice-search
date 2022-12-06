@@ -6,14 +6,26 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
-
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
-
-  <body>
-    <main class="container mx-auto mt-28 px-5 flex">
+  <% if user_signed_in? %>
+  <body class="bg-#F1F1F6">
+    <main class="container-fluid px-0">
+      <%= render "layouts/navbar" %>
+      <%= notice %>
+      <%= alert %>
       <%= yield %>
     </main>
   </body>
+  <% else %>
+  <body class="bg-cover bg-fixed" background="https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+    <main class="container-fluid px-0">
+      <%= render "layouts/navbar" %>
+      <%= notice %>
+      <%= alert %>
+      <%= yield %>
+    </main>
+  </body>
+  <% end %>
 </html>
