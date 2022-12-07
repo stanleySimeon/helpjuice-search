@@ -78,6 +78,8 @@ In order to run this project you need:
  Ruby
  Gem
  Rspec
+ capybara
+ cancan
 ```
 
 ### Setup
